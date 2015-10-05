@@ -1,39 +1,39 @@
-//“ñ•¶’Tõ(¸‡)
+//äºŒæ–‡æ¢ç´¢(æ˜‡é †)
 import java.util.Scanner;
 class BinarySearchTest{
-    public static int NOT_NUM = -1; //‚ ‚è‚¦‚È‚¢’l‚ğ“ü‚ê‚é
+    public static int NOT_NUM = -1; //ã‚ã‚Šãˆãªã„å€¤ã‚’å…¥ã‚Œã‚‹
     public static void main(String[] args){
     	Scanner stdIn=new Scanner(System.in);
-        System.out.println("—v‘f”‚Í:");
+        System.out.println("è¦ç´ æ•°ã¯:");
         int n=stdIn.nextInt();
         int []arr=new int[n];
         for(int a=0;a<n;a++){
         	System.out.println("x["+a+"]:");
         	arr[a]=stdIn.nextInt();
         }
-        System.out.println("ŒŸõ‚·‚éKey");
+        System.out.println("æ¤œç´¢ã™ã‚‹Key");
         int num=stdIn.nextInt();
 
-        int p = binariSearch(arr, num);  //“ñ•ª’Tõ‚ğ‚·‚é
+        int p = binariSearch(arr, num);  //äºŒåˆ†æ¢ç´¢ã‚’ã™ã‚‹
 
         if(p == NOT_NUM){
-            System.out.println(num + "‚ÍŒ©‚Â‚©‚ç‚È‚¢‚Å‚·");
+            System.out.println(num + "ã¯è¦‹ã¤ã‹ã‚‰ãªã„ã§ã™");
         }
         else{
-            System.out.println("arr[" + p + "]‚Å”­Œ©‚Å‚·");
+            System.out.println("arr[" + p + "]ã§ç™ºè¦‹ã§ã™");
         }
     }
 
-    //“ñ•ª’Tõ‚Å”z—ñ‚ğŒŸõBiˆø”F”z—ñAŒŸõ‚µ‚½‚¢’lj*******
+    //äºŒåˆ†æ¢ç´¢ã§é…åˆ—ã‚’æ¤œç´¢ã€‚ï¼ˆå¼•æ•°ï¼šé…åˆ—ã€æ¤œç´¢ã—ãŸã„å€¤ï¼‰*******
     public static int binariSearch(int[] arr, int num){
         int l = 0;
         int r = arr.length-1;
         int m;
         int val = NOT_NUM;
 
-        //¶‚Æ‰E‚ª“ü‚ê‘Ö‚í‚é‚Ü‚ÅŒJ‚è•Ô‚·
+        //å·¦ã¨å³ãŒå…¥ã‚Œæ›¿ã‚ã‚‹ã¾ã§ç¹°ã‚Šè¿”ã™
         while(l<=r){
-            m = (l+r) / 2;  //’†‰›‚ğ‹‚ß‚é
+            m = (l+r) / 2;  //ä¸­å¤®ã‚’æ±‚ã‚ã‚‹
 
             if(arr[m] < num){
                 l = m + 1;
