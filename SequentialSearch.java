@@ -10,7 +10,7 @@ public class SequentialSearch {
         } else {
             return -1;
         }
-        
+
         while (true) {
             if (i == size) {
                 return -1;
@@ -26,22 +26,23 @@ public class SequentialSearch {
         int max = 1000000;//配列の数
         int[] array = new int[max];
         Random rnd = new Random();
-        Scanner KeyNum =new nexScanner(System.in)
-        int KeyNum;//keyの入力
+        Scanner stdIn =new Scanner(System.in);
+        System.out.println("Keyの手入力");
+        int KeyNum=stdIn.nextInt();
         //max分配列に値を入力する
         for (int i = 0; i < max; i++) {
             array[i] = rnd.nextInt(1000000);
         }
-        
+
         long start = System.nanoTime();
-        int index = seqSearch(array, keyNum);
+        int index = seqSearch(array, KeyNum);
         long end = System.nanoTime();
         //表示
         if (index != -1) {
-            System.out.println("探したかった数字→" + keyNum + "　は" + index + "番目にあります！");
+            System.out.println("探したかった数字→" + KeyNum + "　は" + index + "番目にあります！");
             System.out.println("array[index]→" + array[index]);
         } else {
-            System.out.println("探してた数字→" + keyNum + "はないです");
+            System.out.println("探してた数字→" + KeyNum + "はないです");
         }
 		//経過時間の表示
         //数が少ない場合はlong t1 = System.nanoTime();を使った方がいい
