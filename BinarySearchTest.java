@@ -13,10 +13,9 @@ class BinarySearchTest{
         }
         System.out.println("探索するKey");
         int num=stdIn.nextInt();//探索キーを入力
-
+		long start=System.nanoTime();
         int p = binariSearch(arr, num);  //二分探索
 
-		long start=System.nanoTime();
         if(p == NOT_NUM){
             System.out.println(num + "はみつかりませんでした");
         }
