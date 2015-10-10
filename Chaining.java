@@ -1,5 +1,5 @@
 ﻿//チェイン法
-public class Chaining {
+public class chaining {
 
     //キー
     class Key {
