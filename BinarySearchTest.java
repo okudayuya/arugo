@@ -9,8 +9,25 @@ class BinarySearchTest{
         int []arr=new int[n];
         for(int a=0;a<n;a++){
         	System.out.println("x["+a+"]:");
-        	arr[a]=stdIn.nextInt();//配列の入力(昇順)
+        	arr[a]=stdIn.nextInt();//配列の入力
         }
+        //配列の並び替え(昇順)
+        for(int i=0;i<arr.length-1;i++){
+        	for(int j=0;j<arr.length-i-1;j++){
+        		if(arr[j]>arr[j+1]){//入れ替わる場合
+        			int asc=arr[j];//ascに代入
+        			arr[j]=arr[j+1];//配列の入れ替え
+        			arr[j+1]=asc;//配列に代入
+        		}
+        	}
+        }
+        //ソート後の結果を出力
+        for(int i = 0; i < arr.length; i++) {
+        	System.out.print(arr[i]+" ");
+        }
+        System.out.println(" ");
+        
+        
         System.out.println("探索するKey");
         int num=stdIn.nextInt();//探索キーを入力
 		long start=System.nanoTime();
