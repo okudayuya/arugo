@@ -5,7 +5,7 @@ class StackAp {
     static StackExample stack;
     static BufferedReader in;
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String args[]) throws Exception {//メイン文
 	int value;
 	stack = new StackExample();
 	in = new BufferedReader(new InputStreamReader(System.in));
