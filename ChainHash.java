@@ -4,7 +4,7 @@
    class Node<K,V> { 
     private K key;                 //キー値 
     private V data;                //データ 
-    private Node<K,V> next;        //後続ノードへの参照 
+    private Node<K,V> next;        //後続ノードへの参照 (アドレス)
     
  // --- コンストラクタ ---- 
       Node(K key,V data, Node<K,V> next) { 
@@ -91,7 +91,7 @@
         } 
         return 1;                             //そのキー値は存在しない 
              } 
-     //---- ハッシュ表をダンプ ------ 
+     //---- ハッシュ表をダンプ (表示)------ 
        public void dump(){ 
         for ( int i = 0; i < size; i++){ 
          Node<K,V> p = table[i]; 
