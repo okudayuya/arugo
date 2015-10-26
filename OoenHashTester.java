@@ -4,8 +4,8 @@ public class OpenHashTester{
 	static Scanner stdIn=new Scanner(System.in);
 	
 	static class Data{
-		static final int NO=1;
-		static final int NAME=2;
+		static final int NO=1;//会員番号
+		static final int NAME=2;//名前
 		
 		private Integer no;
 		private String name;
