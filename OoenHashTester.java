@@ -18,7 +18,7 @@ public class OpenHashTester{
 			return name;
 		}
 		
-		void scanData(String guide,int sw){
+		void scanData(String guide,int sw){//データ読み込み
 			System.out.println(guide;"するデータを入力してください.");
 			if((sw&NO)==NO){
 				System.out.print("番号:");
