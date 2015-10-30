@@ -31,7 +31,7 @@ public class OpenHashTester{
 		}
 	}
 	
-	enum Menu{
+	enum Menu{//メニュー
 		ADD("データ追加"),
 		REMOVE("データ削除"),
 		SEARCH("データ探索"),
