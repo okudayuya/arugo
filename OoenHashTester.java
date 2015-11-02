@@ -1,5 +1,5 @@
 ﻿//オープンアドレス法(メイン文)
-import java.util.scanner;
+import java.util.Scanner;
 public class OpenHashTester{
 	static Scanner stdIn=new Scanner(System.in);
 	
