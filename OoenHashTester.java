@@ -91,4 +91,24 @@ public class OpenHashTester{
 					}
 					break;
 					
+				case REMOVE:
+					temp.scanData("削除",Data.NO);
+					hash.remove(temp.keCode());
+					break;
+				
+				case SEARCH:
+					temp.scanData("探索",Data.NO);
+					Data t=hash.search(temp.keyCode));
+					if(t!=null)
+						System.out.println("そのキーを持つデータは"+t+"です");
+					else
+						System.out.println("該当するデータはありません");
+					break;
 					
+				case DUMP:
+					hash.dump();
+					break;
+				}
+			}while(menu!=Menu.TERMINATE);
+		}
+	}
