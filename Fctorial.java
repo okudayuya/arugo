@@ -14,9 +14,9 @@ class Factorial{
 	public static void main(String[] args){
 		Scanner stdIn=new Scanner(System.in);
 		
-		System.out.print("整数を入力せよ:");
+		System.out.print("整数を入力せよ:");//入力
 		int x=stdIn.nextInt();
 		
-		System.out.println(x+"の階乗は"+factorial(x)+"です");
+		System.out.println(x+"の階乗は"+factorial(x)+"です");//表示
 	}
 }
