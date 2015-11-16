@@ -1,4 +1,4 @@
-﻿//ヒープソート
+﻿//ヒープソート　教科書
 import java.util.Scanner;
 
 class HeapSort{
