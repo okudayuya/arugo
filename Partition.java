@@ -1,4 +1,4 @@
-﻿//クイックソート
+﻿//配列の分割
 import java.util.Scanner;
 
 class Partition{
