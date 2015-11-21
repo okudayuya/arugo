@@ -16,7 +16,7 @@ class Partition{
 		int pr=n-1;		//右カーソル
 		int x=a[n/2];	//枢軸(中央の要素)
 		
-		do{
+		do{							//配列aを枢軸xで分割
 			while(a[pl]<x) pl++;
 			while(a[pr]>x) pr++;
 			if(pl<=pr)
@@ -26,13 +26,13 @@ class Partition{
 		System.out.println("枢軸の値は"+x*"です");
 		
 		System.out.println("枢軸以下のグループ");
-		for(int i=0;i<=pl-1;i++)
+		for(int i=0;i<=pl-1;i++)	//a[pr+1]～a[pl-1]
 			System.out,print(a[i]+" ");
 		System.out.println();
 	}
 	
 	System.out.println("枢軸と一致するグループ");
-	for(int i=pr+1;i<n;i++)
+	for(int i=pr+1;i<n;i++)			//a[pr+1]～a[n-1]
 		System.out.print(a[i]+" ");
 	System.out.println();
 }
@@ -49,6 +49,6 @@ public static void main(String[] args){
 		System.out.print("x["+i+"]:");
 		x[i]=stdIn.nextInt();
 	}
-	partition(x,nx);
+	partition(x,nx);//配列xを分割
 }
 }
