@@ -1,23 +1,26 @@
-//TreeMapƒNƒ‰ƒX
+ï»¿//TreeMapã‚¯ãƒ©ã‚¹
 import java.util.*;
 public class TreeMapSample {
-public static void main(String[] args){
-// Map‚ÌÀ‘•‚Å‚ ‚éHashMapƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX¶¬C¡‰ñ‚ÍƒL[‚à’l‚à•¶š—ñŒ^
-// ƒWƒFƒlƒŠƒNƒXi‘ÌŒ^j‚ğg‚Á‚Ä‚¢‚éi•œKj
-TreeMap<String,String> map = new TreeMap<String,String>();
-map.put("red","Ô"); // —v‘f‚Ì’Ç‰Á
-map.put("blue","Â");
-map.put("green","—Î");
-map.put("green","—Î"); // “¯‚¶—v‘f‚ğ’Ç‰Á‚µ‚Ä‚à—v‘f‚Íd•¡‚³‚ê‚È‚¢
-System.out.println(map.get("blue")); // ƒL[‚ğw’è‚µ‚Ä•\¦
-System.out.println("");
-for(String key:map.keySet()){ // —v‘f‚Ìˆê——‚ğ•\¦G Šg’£For•¶i•œKj
-System.out.println(key+" = "+map.get(key));
-}
-System.out.println("");
-map.remove("green"); //ƒL[‚ğw’è‚µ‚Äíœ
-for(String key:map.keySet()){ // —v‘f‚Ìˆê——‚ğ•\¦G Šg’£For•¶i•œKj
-System.out.println(key+" = "+map.get(key));
-}
-}
+	public static void main(String[] args){
+		// Mapã®å®Ÿè£…ã§ã‚ã‚‹HashMapã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆï¼Œä»Šå›ã¯ã‚­ãƒ¼ã‚‚å€¤ã‚‚æ–‡å­—åˆ—å‹
+		// ã‚¸ã‚§ãƒãƒªã‚¯ã‚¹ï¼ˆç·ç§°å‹ï¼‰ã‚’ä½¿ã£ã¦ã„ã‚‹ï¼ˆå¾©ç¿’ï¼‰
+		TreeMap<String,String> map = new TreeMap<String,String>();
+		map.put("red","èµ¤"); // è¦ç´ ã®è¿½åŠ 
+		map.put("blue","é’");
+		map.put("green","ç·‘");
+		map.put("green","ç·‘"); // åŒã˜è¦ç´ ã‚’è¿½åŠ ã—ã¦ã‚‚è¦ç´ ã¯é‡è¤‡ã•ã‚Œãªã„
+		System.out.println(map.get("blue")); // ã‚­ãƒ¼ã‚’æŒ‡å®šã—ã¦è¡¨ç¤º
+
+		System.out.println("");
+		for(String key:map.keySet()){ // è¦ç´ ã®ä¸€è¦§ã‚’è¡¨ç¤ºï¼› æ‹¡å¼µForæ–‡ï¼ˆå¾©ç¿’ï¼‰
+			System.out.println(key+" = "+map.get(key));
+		}
+		
+		System.out.println("");
+		
+		map.remove("green"); //ã‚­ãƒ¼ã‚’æŒ‡å®šã—ã¦å‰Šé™¤
+		for(String key:map.keySet()){ // è¦ç´ ã®ä¸€è¦§ã‚’è¡¨ç¤ºï¼› æ‹¡å¼µForæ–‡ï¼ˆå¾©ç¿’ï¼‰
+			System.out.println(key+" = "+map.get(key));
+		}
+	}
 }
